@@ -182,6 +182,17 @@ pre[href]:hover  {
 pre:hover, pre:focus {
   width: 485px;  /* last: 50%, was: fit-content; before that; width: min-content */
 }
+table {
+  table-layout: fixed;
+  width: 120px;
+  border: 1px solid red;
+}
+td {
+  border: 1px solid blue;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 @media all and (max-width: 500px) {
   img.frame { 

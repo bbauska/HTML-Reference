@@ -3,12 +3,12 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of HTML-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+
+  <!-- meta charset, viewport, author, title, desc, keywords, robots.txt seo, stylesheet (local) -->
   <meta charset="utf-8">
-  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Brian Bauska (bbauska)">
   <meta name="title" content="HTML Reference for Web Development">
-  <meta name="robots" content="index, follow">
   <meta name="description" content="By the end of the course, you will have a solid 
     foundation in HTML5 programming and a clear understanding of how to use it 
     for web development.">
@@ -32,11 +32,11 @@
     BriansBlog,CellarDoor,Silus,GW,Gaming,World,SilusGamingWorld,SilusGW,#Silus-GW,#cellardoor,bbauska,
     #SilusGamingWorld,#SilusGW,gluttony,selfishness,#bbauska,#silas,#silys,#sylus,#sylas,#sylusgw,
     #silasGW,#silasgamingworld,#roblox,roblox,minecraft,#minecraft,LearnJSwithBrian">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  <title>HTML Reference for Web Development</title>
-  <link rel="canonical" href="https://html-reference.bauska.org">
-  <!-- favicon -->
+  <!-- shortcut icon, favicon for apple, android, microsoft, tile color/image, theme color, canonical url, title -->
+  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
   <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -54,13 +54,38 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://html-reference.bauska.org">
+  <title>HTML Reference for Web Development</title>
 
 </head>
 <body>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <button onclick="tableOfContentsFunction()" id="myBtn" title="Go to Top">Top</button>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <script>
+    <!-- get the button -->
+    var mybutton = document.getElementById("myBtn");
+
+    <!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    <!-- when the user clicks on the button, scroll to the table of contents near top of document. -->
+    function tableOfContentsFunction() {
+      document.getElementById('table-of-contents').scrollIntoView();
+    }
+  </script>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 id="#html-ref">HTML Reference</h1>
+<h1><a href="#html-ref">HTML Reference</a></h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#topics">Related Topics</h2>
+<h2><a href="#topics">Related Topics</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><a href="#html5-events.md">HTML Events List</a></li>
@@ -75,7 +100,7 @@
 </ul>
 <br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2><a id="toc">Table of Contents</a></h2>
+<h2><a id="table-of-contents">Table of Contents - HTML Reference</a></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
   <li><a href="#1-intro">Introduction</a></li>
@@ -11266,7 +11291,8 @@ Last editted: 5/26/2025 +12pm<br>
 Last editted: 6/16/2025 +12am<br>
 Last editted: 8/6/2025 +11am<br>
 Last editted: 12/28/2025 +9pm<br>
-Last editted: 5/15/2026 +11pm</h6>
+Last editted: 5/15/2026 +11pm<br>
+Last editted: 5/17/2026 +6pm</h6>
 <p>The End…</p>
 
 </footer>
